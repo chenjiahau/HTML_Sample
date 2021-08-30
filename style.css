@@ -14,6 +14,9 @@ body {
 .header-container {
   background-color: aquamarine;
   grid-column: 1 / -1;
+}
+
+.header-body {
   display: grid;
   grid-template-columns: 500px 1fr;
   justify-items: start;
@@ -54,6 +57,9 @@ body {
 .section-container {
   background-color: #fff;
   grid-column: 1 / -1;
+}
+
+.section-body {
   display: grid;
   grid-template-columns: 340px 1fr;
   justify-items: start;
