@@ -6,31 +6,35 @@
 
 body {
   font-family: sans-serif;
+  display: grid;
+  grid-template-columns: 300px 1fr;
 }
 
 /* header */
 .header-container {
   background-color: aquamarine;
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: 500px 1fr;
+  justify-items: start;
+	align-items: center;
 }
 
 .header-container h1 {
-  float: left;
   margin: 20px;
+  justify-content: start;
 }
 
 .header-container nav {
-  float: right;
-  margin-top: 35px;
   margin-right: 20px;
+  justify-self: end;
 }
 
 .nav-item-img {
-  float: left;
   width: 22px;
 }
 
 .nav-item-link {
-  float: left;
   margin-left: 10px;
   margin-right: 10px;
   font-size: 16px;
@@ -49,25 +53,30 @@ body {
 /* section */
 .section-container {
   background-color: #fff;
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: 340px 1fr;
+  justify-items: start;
+	align-items: center;
 }
 
 .section-container img {
-  float: left;
   width: 300px;
-  margin: 20px;
+  margin: 20px 20px 0 20px;
+  justify-content: start;
+  align-self: start;
 }
 
 .section-container article {
-  float: left;
-  max-width: 600px;
-  margin: 20px;
   line-height: 22px;
+  margin: 20px 20px 20px 0;
 }
 
 .footer-container {
   background-color: cadetblue;
   text-align: center;
   padding: 20px;
+  grid-column: 1 / -1;
 }
 
 .footer-container p {
