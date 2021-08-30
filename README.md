@@ -1,1 +1,1 @@
-Layout is making by float
+Layout is making by grid
